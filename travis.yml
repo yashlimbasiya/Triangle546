@@ -2,4 +2,4 @@ language: python
 python:
  - "3.5"
 script:
- - cd triangle && python -m unittest TestTriangle.py
+ - cd triangle && python -m Triangle.py
