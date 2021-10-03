@@ -1,5 +1,7 @@
 language: python
 python:
- - "3.9"
+ - "3.5"
+
+# command to run tests
 script:
- - cd triangle && python -m unittest TestTriangle.py
+ - python -m unittest TestTriangle  
