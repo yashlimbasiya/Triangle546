@@ -9,7 +9,9 @@ class TestTriangles(unittest.TestCase):
     # define multiple sets of tests as functions with names that begin
     
     def testInvalidInputA(self):
-    	self.assertEqual(classifyTriangle(2,230,332),'InvalidInput')   
+    	self.assertEqual(classifyTriangle(2.43,230,332),'InvalidInput')
+    def testInvalidInputB(self):
+        self.assertEqual(classifyTriangle(0,-1,0),'InvalidInput')    
     def testNotATriangleB(self):
         self.assertEqual(classifyTriangle(1, 3, 7),'NotATriangle') 
     def testRightTriangleA(self): 
